@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/TextView.Nickname"
+        android:id="@+id/nickname"
+        />
+
+    <LinearLayout
+        android:layout_below="@+id/nickname"
+        android:id="@+id/interestsPrimary"
+        style="@style/LinearLayout.Interests">
+
+        <TextView
+            style="@style/TextView.Interest"
+            android:id="@+id/interest_1" />
+
+        <TextView
+            style="@style/TextView.Interest"
+            android:id="@+id/interest_2" />
+
+        <TextView
+            style="@style/TextView.Interest"
+            android:id="@+id/interest_3" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/interestsPrimary"
+        android:id="@+id/interestsSecondary"
+        android:layout_marginTop="5dp"
+        style="@style/LinearLayout.Interests">
+
+        <TextView
+            android:id="@+id/interest_4"
+            style="@style/TextView.Interest" />
+
+        <TextView
+            android:id="@+id/interest_5"
+            style="@style/TextView.Interest"  />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnlstn"
+            android:text="click on"></Button>
+    </LinearLayout>
+
+</RelativeLayout>
